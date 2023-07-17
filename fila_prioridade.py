@@ -36,9 +36,9 @@ class FilaPrioridade:
     def first(self) -> No:
         # implementação do método
         if self.__qtdItens == 0:
-            return True
+            return None
         else:
-            return False
+            return self.__inicio
 
 
     # insere um item na fila de prioridade e retorna True, se o item for inserido
@@ -91,7 +91,7 @@ class FilaPrioridade:
     def display(self) -> list[tuple()]:
         # implementação do método
         pass
-    
+
 
     # retorna a quantidade de elementos na fila de prioridade
     # se a fila de prioridade estiver vazia, retorna ZERO
